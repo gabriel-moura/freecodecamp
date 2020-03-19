@@ -24,9 +24,18 @@
 
 
 <!-- Usando uma classe css para estilizar uma tag/elemento css-->
-
-
+ <!-- pode-se especificar uma borda usando esse simbolo %-->
 <style>
+
+.background-silver{
+    background:silver;
+}
+.border-blue{
+border-color:blue;
+border-width:10px;
+border-style:solid;
+border-radius:30px;
+}
 
 .red-text{
      color:red;
@@ -39,11 +48,17 @@
 h2{
     font-size: 60 px;
     font-family: arial;
+    border-width:2px;
+    border-color:thistle;
+    border-style:solid;
 }
 
 h1{
     font-size: 100 px;
     font-family: arial;
+    border-color:thistle;
+    border-width:2px;
+    border-style:solid;
 }
 
 </style>
@@ -51,9 +66,10 @@ h1{
 
 <main>
 
-        <h1 class="red-text" >programação</h1>
+        <h1 class="red-text" >Mundo Da Programação</h1>
     
-        <img src="Programacao.jpg" alt="" height="100" width="100" >
+        <img src="Programacao.jpg" class="border-blue" style="width:300px, height:300px;" alt=""  >
+
 
 
     <h2 class="blue-text">Qual liguagem é mais antiga ?</h2>
@@ -76,7 +92,14 @@ h1{
 
         </label>
 
+<div class="background-silver">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
 
+</div>            
 
 
 
