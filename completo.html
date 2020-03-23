@@ -4,7 +4,7 @@
 <title>Prog</title>
 
 </head>    
-<body>
+<body class="background-site">
 
  <!--   <style >
 
@@ -26,9 +26,11 @@
 <!-- Usando uma classe css para estilizar uma tag/elemento css-->
  <!-- pode-se especificar uma borda usando esse simbolo %-->
 <style>
-
+.background-site{
+    background-color:burlywood;
+}
 .background-silver{
-    background:silver;
+    background-color:silver;
 }
 .border-blue{
 border-color:blue;
@@ -37,42 +39,44 @@ border-style:solid;
 border-radius:30px;
 }
 
-.red-text{
-     color:red;
+.black-text{
+     color:black;
  }
 
 .blue-text{
     color:blue;
 }
 
-h2{
+#check{
     font-size: 60 px;
-    font-family: arial;
-    border-width:2px;
+    font-family:Helvetica;
     border-color:thistle;
     border-style:solid;
 }
 
 h1{
     font-size: 100 px;
-    font-family: arial;
+    font-family: Helvetica;
     border-color:thistle;
     border-width:2px;
     border-style:solid;
 }
-
+#img-prog{
+    width:500px;
+    height:500px;
+}
 </style>
     
 
 <main>
 
-        <h1 class="red-text" >Mundo Da Programação</h1>
+        <h1 class="black-text" >Mundo Da Programação</h1>
     
-        <img src="Programacao.jpg" class="border-blue" style="width:300px, height:300px;" alt=""  >
+        <img id="img-prog"src="Programacao.jpg" class="border-blue" alt=""  >
 
 
 
-    <h2 class="blue-text">Qual liguagem é mais antiga ?</h2>
+    <h2 id="check" class="blue-text">Qual liguagem é mais antiga ?</h2>
         <label for="btn1">
         
             <input id="btn1" type="radio" name="1">java
